@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+<head>
+     <meta charset="utf-8">
+ 
+              <title>Class 5</title>
+                         <link rel = "icon" href =
+        "images/a.jpg"
+        type = "image/x-icon">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"                                rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Courgette&family=Khand&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Vidaloka&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Courgette&family=Khand&family=Lobster&family=Lobster+Two&family=Pacifico&family=Permanent+Marker&family=Vidaloka&display=swap" rel="stylesheet">
+   <style>
+                                                *{
+				box-sizing: border-box;
+			}
+
+			body{
+				margin: 0;
+				font-family: tahoma;
+				font-size: 1.1em;
+			
+			}
+
+
+
+      /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+  .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+  .col-s-12{
+    font-family:cursive;
+  }
+   .col-s-12 p{
+  font-size:50px;
+margin:30px;
+       color: #902f2f;
+   font-family: 'Bree Serif', serif;
+  }
+
+   input[type="text" i] {
+   margin:10px;
+   border: 1px solid #D7263D;
+    outline: none;
+    padding: 10px 50px;
+    background: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+    color: #DD4055;
+}
+
+  .col-s-12 button{
+   border: 1px solid #D7263D;
+    outline: none;
+    padding: 10px 50px;
+    background: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 1s;
+    color: #DD4055;
+}
+   .col-l-12 img{
+  
+   width:100%;
+  height:auto;
+  }
+  button:hover {
+    background: #D7263D;
+    color: white;
+    transition: all 1s;
+}
+     input[type="text" i]:hover {
+    background: #D7263D;
+    color: white;
+    transition: all 1s;
+}
+
+.header{
+  background-color:#d23213e8;
+    box-shadow: 13px 14px 16px #d43434;
+   padding:20px;
+}
+ 
+  span {
+    margin:25%;
+    font-size:45px;
+    font-family: 'Vidaloka', serif;
+}
+  .header a{
+  color:white;
+   text-decoration:none;
+   font-size:50px;
+   font-family: 'Lobster', cursive;
+    color:#211b19e8;
+  }
+
+
+
+
+   .fotter{
+background-color:#63190ae8;
+  padding:30px;
+  color:#ffbdb0e8;
+   text-align:center;
+   font-size:30px;
+    font-family: 'Vidaloka', serif;
+   
+ }
+
+ 
+       .pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}      
+
+
+ .pagination col-12{
+  text-decoration:none;
+  }
+   </style>
+    
+</head>
+<body>
+   
+
+   <div class="topnav" id="myTopnav">
+             <div class="col-s-12 col-12 header">
+      
+             <a href="index.html">Quiz Questions</a>
+             <span>Class 5</span>
+   </div>
+</div>
+    
+  
+        <div class="col-l-12 col-12">
+        <img src="images/5.png">
+         </div>
+
+     <div class="col-s-12 col-12">
+    <p>Q1.Which is the national bird of the United States of America? </p>
+    <input id="word1" type="text">
+    <button id="checkbtn1">Check</button>
+    <div id="output1">
+       <p>Answer</p>
+     </div>
+  </div>
+
+
+     <div class="col-s-12 col-12">
+    <p>Q2.Atacama Desert is in which continent?
+</p>
+    <input id="word2" type="text">
+    <button id="checkbtn2">Check</button>
+    <div id="output2">
+       <p>Answer</p>
+     </div>
+  </div>
+
+     <div class="col-s-12 col-12">
+    <p>Q3.When is World Heritage Day celebrated?</p>
+    <input id="word3" type="text">
+    <button id="checkbtn3">Check</button>
+    <div id="output3">
+       <p>Answer</p>
+     </div>
+  </div>
+   
+
+     <div class="col-s-12 col-12">
+    <p>Q4.Where is Mount Vesuvius located?</p>
+    <input id="word4" type="text">
+    <button id="checkbtn4">Check</button>
+    <div id="output4">
+       <p>Answer</p>
+     </div>
+  </div>
+  
+     <div class="col-s-12 col-12">
+    <p>Q5.River Nile flows through how many countries? </p>
+    <input id="word5" type="text">
+    <button id="checkbtn5">Check</button>
+    <div id="output5">
+       <p>Answer</p>
+     </div>
+  </div>
+ 
+    <div class="col-s-12 col-12">
+    <p>Q6.Atacama Desert is in which continent?</p>
+    <input id="word6" type="text">
+    <button id="checkbtn6">Check</button>
+    <div id="output6">
+       <p>Answer</p>
+     </div>
+  </div>
+     <div class="col-s-12 col-12">
+    <p>Q7.Which language is the third most spoken language in the world after English and Mandarin with 615 million speakers? </p>
+    <input id="word7" type="text">
+    <button id="checkbtn7">Check</button>
+    <div id="output7">
+       <p>Answer</p>
+     </div>
+  </div>
+    <div class="col-s-12 col-12">
+    <p>Q8.What is the chemical symbol for hydrogen? </p>
+    <input id="word8" type="text">
+    <button id="checkbtn8">Check</button>
+    <div id="output8">
+       <p>Answer</p>
+     </div>
+  </div>   
+    <div class="col-s-12 col-12">
+    <p>Q9.How many valence electrons are in an atom of carbon? </p>
+    <input id="word9" type="text">
+    <button id="checkbtn9">Check</button>
+    <div id="output9">
+       <p>Answer</p>
+     </div>
+  </div>
+   
+      <div class="col-s-12 col-12">
+    <p>Q10. Which is the largest salt water lake in the world? </p>
+    <input id="word10" type="text">
+    <button id="checkbtn10">Check</button>
+    <div id="output10">
+       <p>Answer</p>
+     </div>
+  </div>
+   <div class="col-s-12 col-12">
+    <p>Q11. how many states in india? </p>
+    <input id="word11" type="text">
+    <button id="checkbtn11">Check</button>
+    <div id="output11">
+       <p>Answer</p>
+     </div>
+  </div>
+   <div class="col-s-12 col-12">
+    <p>Q12.who won the first t20 world cup?</p>
+    <input id="word12" type="text">
+    <button id="checkbtn12">Check</button>
+    <div id="output12">
+       <p>Answer</p>
+     </div>
+  </div>
+   <div class="col-s-12 col-12">
+    <p>Q13.Whow won the 2016 (t20 world cup)?</p>
+    <input id="word13" type="text">
+    <button id="checkbtn13">Check</button>
+    <div id="output13">
+       <p>Answer</p>
+     </div>
+  </div>
+   <div class="col-s-12 col-12">
+    <p>Q14.When was the unit circle created?</p>
+    <input id="word14" type="text">
+    <button id="checkbtn14">Check</button>
+    <div id="output14">
+       <p>Answer</p>
+     </div>
+  </div>
+   <div class="col-s-12 col-12">
+    <p>Q15.Who discovered trigonometry?</p>
+    <input id="word15" type="text">
+    <button id="checkbtn15">Check</button>
+    <div id="output15">
+       <p>Answer</p>
+     </div>
+  </div>
+
+     <div class="pagination">
+   <div class="col-s-12 col-l-12">
+  <a href="#">&laquo;</a>
+  <a href="index.html">0</a>
+    <a href="class1.html">1</a>
+  <a href="class2.html">2</a>
+  <a href="class3.html">3</a>
+  <a href="class4.html">4</a>
+  <a href="class5.html"class="active">5</a>
+  <a href="class6.html">6</a>
+   <a href="class7.html">7</a>
+  <a href="class8.html">8</a>
+  <a href="class9.html">9</a>
+  <a href="class10.html">10</a>
+ 
+  <a href="#">&raquo;</a>
+    </div>
+ </div>
+   <div class="col-s-12 col-l-12 fotter">
+      Copyright &copy; 2021 All Rights Reserved
+
+</div>
+
+    <script>
+  1
+     document.getElementById("checkbtn1").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word1").value;
+   document.getElementById("output1").innerText ="Bald Eagle";
+  });
+     
+  2
+      document.getElementById("checkbtn2").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word2").value;
+   document.getElementById("output2").innerText =" South America";
+  });
+ 3
+      document.getElementById("checkbtn3").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word3").value;
+   document.getElementById("output3").innerText ="18th April";
+  });
+  4
+      document.getElementById("checkbtn4").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word4").value;
+   document.getElementById("output4").innerText ="Italy";
+  });
+    
+5
+    document.getElementById("checkbtn5").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word5").value;
+   document.getElementById("output5").innerText ="10 countries";
+  });
+6
+    document.getElementById("checkbtn6").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word6").value;
+   document.getElementById("output6").innerText =" South America";
+  });
+7
+    document.getElementById("checkbtn7").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word7").value;
+   document.getElementById("output7").innerText =" Hindi";
+  });
+8
+    document.getElementById("checkbtn8").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word8").value;
+   document.getElementById("output8").innerText ="H";
+  });
+9
+    document.getElementById("checkbtn9").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word9").value;
+   document.getElementById("output9").innerText ="Four";
+  });
+10
+    document.getElementById("checkbtn10").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word10").value;
+   document.getElementById("output10").innerText ="Caspian Sea.";
+  });
+11
+    document.getElementById("checkbtn11").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word11").value;
+   document.getElementById("output11").innerText ="29 states";
+  });
+12
+    document.getElementById("checkbtn12").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word12").value;
+   document.getElementById("output12").innerText =" India";
+  });
+13
+    document.getElementById("checkbtn13").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word13").value;
+   document.getElementById("output13").innerText ="West Indies";
+  });
+14
+    document.getElementById("checkbtn14").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word14").value;
+   document.getElementById("output14").innerText ="140BC";
+  });
+15
+    document.getElementById("checkbtn15").addEventListener("click", function(){
+  alert("checked");
+  
+  let input=document.getElementById("word15").value;
+   document.getElementById("output15").innerText ="Menelaus";
+  });
+
+  
+    </script>
+</body>
+</html>
